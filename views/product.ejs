@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>After Card</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="/css/product.css">
+</head>
+
+<body>
+    <div class="textover">
+        <h1>Homestie Services<br>
+            <hr>
+        </h1>
+    </div>
+    <div class="container">
+        <div class="jumbotron">
+            <div>
+                <h4 class="display-4"><%= data[0].name %> </h1>
+                    <div class="matter">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <h3 class="display-5">Description</h3>
+                                <p><%= data[0].description %> </p>
+                                <a href="/consultation/<%= data[0].category %>" class="btn btn-dark ">Online Consultation</a>
+                                OR
+                                <a href="/consultation/<%= data[0].category %>" class="btn btn-dark mt-2">Book an Appointment</a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <h3 class="display-5">Setup</h3>
+                                <p>started with a device has few simple segments which are sometimes not depicted by the manufacturer.</p>
+                                <a href=<%= data[0].video %> role="button" class="btn btn-primary ">Installation video</a>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <h3 class="display-5">Warranty</h3>
+                                <p>In contract law, a warranty is a promise which is not a condition of the contract or an innominate term.A warranty is a term of a contract. Depending on the terms of the contract, a product warranty may cover a product such that a manufacturer provides a warranty to a consumer with which the manufacturer has no direct contractual relationship.</p>
+                                <a href=<%= data[0].warrenty %> role="button" class="btn btn-success">Check for
+                                    warranty</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

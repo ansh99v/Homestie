@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/login-min.css" . />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="/images/homestie.png" alt="image not found" />
+        </div>
+        <form action="/login/<%= role %>" method="POST">
+          <div class="elements">
+            <div class="email">
+              <label for="emailid"> </label>
+              <input
+                type="text"
+                name="email"
+                id="emailid"
+                placeholder="Email"
+              />
+            </div>
+            <div class="password">
+              <label for="passwordid"></label>
+              <input
+                type="password"
+                name="password"
+                id="passwordid"
+                placeholder="Password"
+              />
+            </div>
+          </div>
+          <div class="submit">
+            <input type="submit" value="LOGIN " />
+          </div>
+
+          <div class="forgot">
+            <a href=""><span> Forgot</span> Username/Password?</a>
+          </div>
+
+          <div class="create">
+            <a href="/signup/<%= role %>">Create your account &#10145; </a>
+          </div>
+        </form>
+      </div>
+    </header>
+  </body>
+</html>

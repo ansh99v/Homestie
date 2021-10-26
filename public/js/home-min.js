@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#ham-btn"),t=document.getElementsByTagName("nav");e.addEventListener("click",()=>{t[0].classList.toggle("navbar-alter")})});
